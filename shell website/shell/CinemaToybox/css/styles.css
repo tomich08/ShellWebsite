@@ -1,0 +1,1140 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*********MAIN PRODUCTS PAGE****************************/
+
+/******************MAIN BODY TAGS********************/
+
+html{
+	font-size:100%;
+}
+
+body{
+	width:100%;
+	max-width:1800px;
+	margin:0 auto;
+	background: #130873; /* Old browsers */
+background: -moz-linear-gradient(left,  #130873 0%, #3412ba 47%, #130873 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#130873), color-stop(47%,#3412ba), color-stop(100%,#130873)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #130873 0%,#3412ba 47%,#130873 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #130873 0%,#3412ba 47%,#130873 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #130873 0%,#3412ba 47%,#130873 100%); /* IE10+ */
+background: linear-gradient(to right,  #130873 0%,#3412ba 47%,#130873 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#130873', endColorstr='#130873',GradientType=1 ); /* IE6-9 */
+}
+
+article{
+	width:95%;
+	display:inline-block;
+	margin-left:2.5%;
+	margin-right:2.5%;
+}	
+
+main{
+	max-width:1000px;
+	width:96%;
+	margin: 2% 2% 0 2%;
+	background-color:#fff;
+	clear:both;
+
+}
+
+p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:.8em;
+	line-height:1.2em;
+}
+
+@media screen and (min-width: 450px){
+	body{
+		background:none;
+	}
+	
+	main{
+		padding-top:1%;
+		background-color:#fff;
+		width:100%;
+	}	
+}	
+
+@media screen and (min-width:760px){
+	
+}
+
+@media screen and (min-width: 900px){
+	main{
+		width:70%;
+		margin:0 auto;
+		
+	}
+	
+	article{
+		width:70%;
+		float:left;
+		margin:0 0 10% 10%;
+		
+		
+	}
+	
+	
+	aside{
+		width:20%;
+		float:left;
+		margin-top:3%;
+		
+	}	
+	
+}
+/*******************HEADER***********************/
+
+
+
+
+.head1{
+	width:100%;
+	
+	background: #130873; /* Old browsers */
+background: -moz-linear-gradient(left,  #130873 0%, #3412ba 47%, #130873 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#130873), color-stop(47%,#3412ba), color-stop(100%,#130873)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #130873 0%,#3412ba 47%,#130873 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #130873 0%,#3412ba 47%,#130873 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #130873 0%,#3412ba 47%,#130873 100%); /* IE10+ */
+background: linear-gradient(to right,  #130873 0%,#3412ba 47%,#130873 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#130873', endColorstr='#130873',GradientType=1 ); /* IE6-9 */
+}
+
+#subheader li{
+	padding-bottom:2%;
+	padding-right:2%;	
+	list-style:none;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:.9em;
+}
+
+
+a:nth-child(1){
+	color:#fff;text-decoration:none;
+}
+
+#subheader{
+	text-align:right;
+	color:#fff;
+}
+
+.head2{
+	width:96%;
+	padding:5% 2% 5% 2%;
+}
+
+#subheader2{
+		background-color:#dad7fb;
+	}
+
+.menu{
+	width:100%;
+	max-width:25px;
+}
+
+.logobox{
+	width:50%;
+	max-width:200px;
+	margin:0 auto;
+}
+
+.logo{
+	width:100%;
+	max-width:384px;
+}
+
+h1{
+	text-align:center;
+	display:none;	
+}
+
+.topnav{
+	display:none;
+}
+
+.menu_button ul li a{
+	text-decoration:none;
+	color:#fff;
+	font-weight:bold;
+	text-shadow:0px 0px 3px #000;
+}
+
+.menu_button ul li{
+	text-align:right;
+	padding-right:2%;
+	padding-bottom:2%;
+	font-family:Verdana, Geneva, sans-serif;
+	text-align:center;
+}
+
+.menu_button{
+	background: #dad7fb;
+	clear:both;
+	width:20%;
+	margin-left:40%;
+	margin-right:40%;
+}
+
+@media screen and (min-width: 450px){
+	.menu_button{
+		display:none;
+	}
+	
+	#subheader{
+		background-color:#130873;
+		width:100%;
+	}
+	
+	
+	
+	
+	.topnav{
+		display:block;
+		width:100%;
+		clear:both;
+		margin-top:2%;
+	
+	}
+	
+	.head2 .topnav nav ul li{
+		width:20%;
+		float:left;
+		text-align:center;
+		margin-left:1%;
+		padding-top:1%;
+		
+		font-size:.8em;
+	}
+	
+	.head2 .topnav nav ul li a{
+		width:100%;
+	}
+	
+	.head2{
+		padding-bottom:1%;
+	}
+	
+	
+	
+	.head2 .topnav nav ul li a{
+		text-decoration:none;
+		color:#130873;
+		font-weight:bold;
+		font-family: 'Cuprum', sans-serif;
+	}
+	
+	.head2 .topnav nav ul li a:hover{
+	background-color:#130873;	
+		padding:7%;
+		color:#fff;
+	}
+	
+	.head2 .topnav nav ul li a:visited{
+		color:#a57129
+	}
+	
+	
+	
+	
+}
+
+@media screen and (min-width:760px){
+	.topnav{
+		width:75%;
+		float:left;
+		clear:none;
+		margin-top:60px;
+		font-size:1.3em;
+	}
+	
+	.logobox{
+		width:25%;
+		float:left;	
+		clear:none;
+		overflow:hidden;
+		margin:0;
+		padding:0;
+	}
+	
+	#subheader{
+		height:20px;
+	}
+	
+	.head2{
+		height:100px;
+		max-width:1000px;
+		
+		margin:0 auto;
+		padding:0;
+	
+	}
+	
+	
+	
+
+	
+}
+
+@media screen and (min-width: 900px){
+	
+	
+	.head2{
+		width:70%;
+		margin:0 auto;		
+	}
+		
+}
+
+@media screen and (min-width: 1100px){
+	
+}
+/**********************END HEADER*************************/
+
+/******************ADMINISTRATIVE STYLES*****************/
+.delete{
+	width:98%;
+	text-align:right;
+}
+
+.delete ul li a{
+	text-decoration:none;
+	color:#000;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+.add{
+	width:100%;
+	text-align:right;
+}
+
+.add ul li a{
+	text-decoration:none;
+	color:#000;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+
+/***************END ADMINISTRATIVE STYLES***************/
+
+/********************MAIN BODY SECTION OF PRODUCTS*******************************************/
+
+/********H TAGS*******/
+h2{
+	text-align:left;	
+	margin-top:3%;
+	font-family: 'Cuprum', sans-serif;
+	font-weight:bold;
+	font-size:1.2em;
+	color:#fff;
+}
+
+
+
+.nobanner{
+	color:#130873;
+	text-align:left;
+}
+
+h3{
+	text-align:left;
+	margin-top:3%;
+	color:#fff;
+	margin-left:2%;
+	font-weight:bold;
+}
+
+h4{
+	text-align:center;
+	clear:both;
+	margin-top:15%;
+	color:#a57129;
+	margin-bottom:3%;
+	padding-top:10%;
+	padding-bottom:5%;
+	font-family: 'Cuprum', sans-serif;
+	font-size:1.3em;
+}
+
+
+
+h4:nth-child(1){
+	padding-top:3%;
+}
+
+
+
+h5{
+	text-align:left;
+	margin-bottom:5%;
+	font-weight:bold;
+	color:#130873;
+}
+
+@media screen and (min-width: 450px){
+	h4{
+		border-top:#CCC solid thin;
+		padding-top:2.5%;
+		margin:0;
+		font-size:1.3em;
+		text-align:left;
+	}
+	
+	.special{
+	background-image:url(../img/h2logo.png);
+	padding-left:2%;
+	font-size:1.3em;
+	border-top:none;
+	height:60px;
+	padding-top:1px;
+	text-align:left;
+}
+	
+	.specialtwo{
+	text-align:left;	
+	font-size:1.3em;
+	border-top:#CCC solid thin;
+	padding-top:2%;
+	}
+
+	
+}
+
+@media screen and (min-width:760px){
+	
+}
+
+@media screen and (min-width: 900px){
+	h4{
+		margin-top:0;
+	}
+}
+/*****************END H TAGS**********************/
+
+/***************SHOP HOME CINEMA NAV****************/
+a{
+	cursor:pointer;
+}
+
+input{
+	cursor:pointer;
+}
+	
+.side_nav_bar{
+	width:75%;
+	float:left;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:.9em;
+	padding-bottom:2%;
+	background-color:#130873;
+
+}
+
+.side_nav_2{
+	width:25%;
+	float:left;
+	display:block;
+	color:#fff;
+	padding-top:2%;	
+	background-color:#130873;
+}
+
+
+
+.side_nav_2 ul li ul{
+	display:none;
+	
+}
+
+.side_nav_2 ul li:hover ul{
+	display:block;
+	
+}
+
+.side_nav_2 ul li:hover ul a{ 
+	height:1em;
+}
+
+
+
+
+.side_nav_2 ul li a{
+	color:#fff;
+	text-decoration:none;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:.9em;
+	font-weight:bold;	
+}
+
+.side_nav_2 ul li ul{
+	background-color:#6899d3;
+	width:100%;
+	
+}
+
+.side_nav_2 ul li{
+	text-align:right;
+	margin-top:2%;
+	
+}
+
+#sidenav{
+	margin-top:5%;
+	background-color:#130873;
+	display:none;
+}
+
+.nav_drop1{
+	background-color:#fff;
+	width:100%;
+	clear:both;
+	
+}
+
+.nav_drop{
+	display:block;
+	background-color:#6899d3;
+	clear:both;
+	padding:2% 0 2% 0;
+	width:50%;
+	margin-left:50%;
+	
+}
+
+
+
+
+.nav_drop ul li{
+	text-align:right;
+	padding-right:3%;
+	padding-bottom:3%;
+}
+
+.nav_drop ul li a{
+	color:#fff;
+	text-decoration:none;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:.7em;
+	
+	
+}
+
+@media screen and (min-width: 450px){
+		.mini_desc{
+		display:block;
+		width:35%;
+		float:left;
+		margin-left:2%;
+		}
+		
+		.add-to-cart{
+		margin-bottom:5%;
+		width:30%;
+		float:left;
+		margin-left:2%;
+		}
+		
+		.pic_box{
+		width:25%;
+		float:left;
+		clear:both;
+		margin-bottom:0%;
+		}
+		
+		.side_nav_2{
+		width:23%;
+		padding-right:2%;
+		}
+		
+		.nav_drop{
+		background-color:#6899d3;
+		clear:both;
+		padding:2% 0 2% 0;
+		width:40%;
+		margin-left:60%;
+		
+		}
+
+		.nav_drop ul li{
+			text-align:right;
+			padding-right:4%;
+			padding-bottom:2%;
+		}
+}
+
+@media screen and (min-width:760px){
+	.nav_drop{
+		padding:2% 0 2% 0;
+		width:30%;
+		margin-left:70%;
+	}
+
+	.nav_drop ul li{
+		padding-right:4%;
+		padding-bottom:1%;
+	}
+	
+	#sidenav{
+		display:block;
+	}
+}
+
+@media screen and (min-width: 900px){
+	.nav_drop{
+		width:100%;
+		display:block;
+		margin:0;
+	}
+	
+
+	.nav_drop ul li{
+		padding-right:4%;
+		padding-bottom:1%;
+		text-align:left;
+		padding-left:2%;
+	}
+	
+	.nav_drop{
+		display:block;
+	}
+	
+	.nav_drop li{
+		padding-top:3%;
+	}
+	
+	.side_nav_bar{
+		width:100%;
+	}
+	
+	.side_nav_2{
+		display:none;
+	}
+	
+	.nav_drop1{
+		border-top:#CCC thin solid;
+	}
+}
+/*************END SHOP HOME CINEMA NAV***************/
+
+
+
+
+/*************PRODUCTS BOX/PIC BOX/ADD TO CART/MINI DESC/FULL DESC***************************/
+.products-box{
+	margin-top:1%;
+	
+}
+
+.pic_box{
+	width:48%;	
+	margin-bottom:0%;
+	float:left;
+}
+
+.pic_box:hover{
+	border:#113377 solid thin;
+}
+
+.minipic{
+	width:100%;
+	max-width:200px;
+}
+
+/*****EVERTHING IN ADD TO CART*******/
+.add-to-cart{
+	margin-bottom:5%;
+	margin-left:6%;
+	width:40%;
+	float:left;
+	
+}
+
+.add-to-cart p{
+	color:#000;
+}
+
+input[type="submit"] {border:none;
+						font-size:.7em;}
+
+.submit{
+	border-radius:10px;
+	padding:6%;
+	width:100%;
+	margin-top:5%;
+	background-color:#130873;
+	color:#fff;
+	box-shadow:0px 0px 2px #000;
+	font-weight:bold;
+	text-shadow:0px 0px 2px #000;
+}
+
+.submit2{
+	border-radius:5px;
+	padding:7%;
+	width:100%;
+	background-color:#a57129;
+	color:#fff;
+	margin-top:5%;
+	font-weight:bolder;
+	text-shadow:0px 0px 4px #000;
+	box-shadow:0px 0px 2px #000;
+}
+
+.submit3{
+	border-radius:5px;;
+	padding:5%;
+	width:100%;
+	box-shadow:0px 0px 2px #000;
+}
+/****************************************/
+
+.mini_desc{
+	display:none;
+	border:#ccc solid thin;
+	border-radius:10px;
+	padding:2%;
+	background-color:#6899d3;
+	color:#fff;
+}
+
+.mini_desc_two{
+	width:100%;
+	border:#ccc solid thin;
+	border-radius:10px;
+	padding:4%;
+	background-color:#6899d3;
+	color:#fff;
+}
+	
+
+.full_desc{
+	width:100%;
+	margin-top:5%;
+	margin-bottom:5%;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:.9em;	
+}
+
+@media screen and (min-width: 450px){
+	.submit{
+		display:none;
+	}
+	
+	.submit2{
+		margin-top:5%;
+		width:100%;
+		
+	}
+	
+	.submit3{
+		width:55%;
+		margin-top:5%;
+		padding:1%;
+		font-weight:bold;
+		text-shadow:0px 0px 2px #000;
+		box-shadow:0px 0px 2px #000;
+		color:#fff;
+		background-color:#130873;
+	}	
+	
+	.mini_desc_two{
+		display:none;
+	}
+	
+	.mini_desc{
+		display:block;
+		float:left;
+		width:28%;
+	}
+	
+	.full_desc{
+		margin-top:3%;
+	}
+	
+	.pic_box{
+		width:28%;
+	}		
+	
+	.add-to-cart{
+		width:31%;
+	}
+	
+	article ul li a{
+		color:#000;
+	}
+	
+	
+}
+		
+
+@media screen and (min-width:760px){
+	
+}
+
+@media screen and (min-width: 900px){
+	/*.pic_box{
+		width:20%;
+	}
+	
+	.add-to-cart{
+		width:30%;
+		margin-left:10%;
+		margin-right:0;
+	}
+	
+	.mini_desc{
+		width:25%;
+		margin-left:5%;
+	}*/
+	
+	submit2{
+		width:100%;
+	}
+	
+}	
+/***************END PRODUCTS BOX/PIC BOX/ADD TO CART/MINI DESC/FULL DESC*****************/
+
+
+
+
+
+
+/***************FOOTER*****************************/
+footer{
+	width:100%;
+	background-color:#ffcb79;
+	margin-top:5%;
+	clear:both;
+	padding:5% 0 5% 0;
+	
+}
+
+h6{
+	color:#000;
+	text-align:center;
+	font-weight:bold;
+}
+
+.bottomnav{
+	width:100%;
+	margin-top:10%;
+}
+
+.bottomnav nav ul li{
+	text-align:center;
+	border-top:#fff solid thin;
+	padding: 2% 0 2% 0;
+	
+}
+
+.bottomnav nav ul li a{
+	text-decoration:none;
+	color:#fff;
+}
+
+.bottomnav nav ul li:hover{
+	background-color:#a66500;
+}
+
+@media screen and (min-width: 450px){
+	.bottomnav{
+		display:none;
+	}
+	
+	footer{
+		background: #130873; /* Old browsers */
+background: -moz-linear-gradient(left,  #130873 0%, #3412ba 47%, #130873 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#130873), color-stop(47%,#3412ba), color-stop(100%,#130873)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #130873 0%,#3412ba 47%,#130873 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #130873 0%,#3412ba 47%,#130873 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #130873 0%,#3412ba 47%,#130873 100%); /* IE10+ */
+background: linear-gradient(to right,  #130873 0%,#3412ba 47%,#130873 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#130873', endColorstr='#130873',GradientType=1 ); /* IE6-9 */
+	}
+	
+	h6{
+		color:#fff;
+	}
+}
+
+@media screen and (min-width:760px){
+	footer{
+		padding:2% 0 2% 0;
+	}
+	
+}
+
+@media screen and (min-width: 900px){
+	
+	
+	
+}
+/**************END FOOTER****************************/
+
+
+
+
+
+
+
+
+/********************PRODUCTS DETAILS PAGE***********************/
+.add-to-cart_det{
+	margin:0 auto 5% auto;
+	width:96%;
+	border:#000 solid thin;
+	border-radius:5px;
+	padding:2%;
+	background-color:#6899d3;
+	clear:both;
+}
+
+
+
+
+.detailpic{
+	width:100%;
+	max-width:300px;
+	margin:0auto;
+}
+
+.pic_box_det{
+	width:100%;
+	float:left;
+	margin-bottom:0;
+}
+
+
+@media screen and (min-width: 450px){
+
+	.add-to-cart_det{
+	width:30%;
+	float:left;
+	margin-left:5%;
+	clear:none;}
+
+.pic_box_det{
+	width:60%;
+	float:left;
+}
+}
+
+@media screen and (min-width: 760px){
+	.products_detail{
+		padding-top:6%;
+	}
+}
+
+/*****************************END PRODUCT DETAILS PAGE**************************/
+
+
+
+
+
+
+
+
+
+/**************************ADD A RECORD PAGE**********************************/
+#addForm{
+	border:#000 thin solid;
+	width:92%;
+	margin:5% 2% 5% 2%;
+	padding:2% 2% 2% 2%;	
+}
+
+.addMain{
+	padding-bottom:5%;
+}
+
+.addInv{
+	margin:4% 0 4% 0;	
+}
+
+input[type="file"]{
+	width:100%; 
+	max-width:450px;
+}
+
+#feedname{
+	color:red;
+}
+
+#feedbdesc{
+	color:red;
+}
+
+#feedfdesc{
+	color:red;
+}
+
+#feedprice{
+	color:red;
+}
+
+@media screen and (min-width: 450px){
+	#addForm{
+		width:96%;
+		margin:5% 0 5% 0;
+		border:#000 medium solid;
+		background-color:#6899d3;
+	color:#fff;
+	font-weight:bold;
+	}
+	
+	#form1{
+		width:43%;
+		float:left;
+		
+	}
+	
+	#form2{
+		width:42%;
+		float:left;
+		margin-left:4%;
+		margin-bottom:5%;
+		border-left:#fff thin solid;
+		padding-left:10%;
+	}
+	
+	#formimg{
+		width:100%;
+		clear:both;
+		border-top:#fff thin solid;
+	}
+	
+	#imgleft{
+		width:48%;
+		float:left;
+	}
+	
+	#imgright{
+		width:48%;
+		float:left;
+		margin-left:2%;
+	}
+	
+	.addprod{
+		text-align:left;
+	}
+}
+
+@media screen and (min-width: 760px){
+	#addForm{
+		width:89%;
+		margin:5% 0 5% 0;
+		border:#000 medium solid;
+		padding:2% 5% 2% 5%;
+	}
+	
+}
+/**********************END ADD A RECORD PAGE*******************************/
+
+
+
+/**************************LOG IN PAGE*************************************/
+
+#logIn{
+	width:90%;
+	margin:5% auto;
+	padding:5%;	
+	
+	font-weight:bold;
+}
+
+
+
+
+
+@media screen and (min-width: 450px){
+	#logIn{
+		width:40%;
+		margin:0 auto;
+		border:#000 solid thin;
+		background-color:#6899d3;
+		color:#fff;
+	}	
+		
+	
+	
+	#logIn form{
+	width:100%;
+	margin:0 auto;
+	}
+}
+
+@media screen and (min-width: 760px){
+	#logIn form{
+	width:50%;
+	margin:0 auto;
+	}
+}
+
+
+
+
+
+
+/*************************END LOG IN PAGE********************************/
+
+#sort{
+	
+}
+
+
+
+#addr{
+	display:none;
+	
+}
+
+.add ul li a{
+	font-size:.6em;
+}
+
+@media screen and (min-width: 760px){
+	#sort{
+	margin-left:0;
+	width:100%;
+	float:left;
+	}
+	
+
+	#addr{
+		display:block;
+}
+
+
+
+}
+
+#services{
+	padding-bottom:1%;
+	padding-left:2%;
+	padding-right:2%;
+}
+
+
+
+/********************Class clearfix*******************************/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	/*display: inline-block;*/
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}

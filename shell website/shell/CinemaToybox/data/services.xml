@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<uservices>
+
+	<service id="five">
+		<service_title>
+		Delivery		
+		</service_title>
+		
+		<service_info>
+		Delivery is available on any item that is listed.  Special delivery options are available. Installation and other extra fees may apply. 
+		</service_info>
+		
+		<service_info_2>
+		Delivery dates are Monday - Saturday.
+		</service_info_2>
+		
+		<service_cost>
+		Free shipping on items that exceed $300 in cost.  Any other item will carry a $25 fee.
+		</service_cost>
+		
+		<service_specials>
+		None at this time. 
+		</service_specials>
+	</service>
+	
+	<service id="four">
+		<service_title>
+		Home Theater Installation		
+		</service_title>
+		
+		<service_info>
+		Why do the set up yourself when you can have one of our highly trained installers will come to you and set up your new equipment the right way, the first time.   
+		</service_info>
+		
+		<service_info_2>
+		All installations require a scheduled appointment.  Times and dates are flexible. 
+		</service_info_2>
+		
+		<service_cost>
+		Costs vary depending on the items being installed. 
+		</service_cost>
+		
+		<service_specials>
+		Free installation of all Miatchi home theater kits.  Limited time only.  
+		</service_specials>
+	</service>
+	
+	<service id="three">
+		<service_title>
+		Television Repair		
+		</service_title>
+		
+		<service_info>
+		Is your television not working and you're not quite ready for a new one?  We can have a service technician stop by and take a look at it!   
+		</service_info>
+		
+		<service_info_2>
+		All repairs require a scheduled appointment.  Times and dates are flexible. 
+		</service_info_2>
+		
+		<service_cost>
+		Costs vary depending on parts and labor to you're specific needs.  
+		</service_cost>
+		
+		<service_specials>
+		None at this time.   
+		</service_specials>
+	</service>
+	
+	
+		<service id="two">
+		<service_title>
+		Warranty Services		
+		</service_title>
+		
+		<service_info>
+		All products offered by Cinema Toybox are backed with warranties directly through the manufacturer.  We would be glad to honor that warranty to save you the hassle of doing it yourself.    
+		</service_info>
+		
+		<service_info_2>
+		Not all issues are covered by the manufacturer. Please see the owner's manual of your particular product.  
+		</service_info_2>
+		
+		<service_cost>
+		The warranty covers parts and labor through the first year.    
+		</service_cost>
+		
+		<service_specials>
+		None at this time.   
+		</service_specials>
+	</service>
+	
+	<service id="one">
+		<service_title>
+		Service Plans		
+		</service_title>
+		
+		<service_info>
+		If the manufacturer warranty isn't security enough, we offer different service plan options to protect your product against unfortunate future events.    
+		</service_info>
+		
+		<service_info_2>
+		All service plans are covered for a length of four years.  This is not in addition to your manufacturers warranty.  
+		</service_info_2>
+		
+		<service_cost>
+		Costs will depend on which item is being covered.    
+		</service_cost>
+		
+		<service_specials>
+		Get the first year covered for free!  Limited time only.    
+		</service_specials>
+	</service>
+	
+	
+	
+</uservices>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Review</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="steps clearfix">
+
+    <header id="stepsHead">
+                <div id="logoBoxTwo">
+                    <img src="img/logo2.png" alt="logo" id="mainLogo2"/>
+                </div>
+    </header>
+
+	<main class="clearfix">
+    	<div id="progressbar">
+        	<img src="img/progress5.png" alt="progress bar" class="progress">
+        </div>
+        
+        <article class="selectionArea clearfix">
+    		<div class="selectionHeader clearfix">
+            	<img src="img/number5.png" class="numbers">
+    			<h1 class="numbers2">Lets Review</h1>
+             </div>
+             
+             <div class="cart"> 
+            	 <div class="yourinfo clearfix"> 
+             	<h2>Your Vehicle Information</h2>
+             	
+             	<p>Your Vehicle:</p>
+             	<div id="vehicle" class="vehicle">No choice yet</div>
+                <p>Vehicle's Mileage:</p>
+                <div id="mileage" class="mileage">No Choice Yet</div>
+           
+        		
+                </div>
+                
+                <div class="selections clearfix">
+                <h2>You Selected</h2>
+                <p>Warranty:</p>
+                <div id="warranty" class="warranty">No Choice yet
+                <a href="step3.html">Edit</a><br/></div>
+                <p>Mileage coverage:</p>
+                <div id="cov" class="cov">No Choice Yet
+                <a href="step4.html">Edit</a><br/></div>
+                </div>
+                
+                <div class="cost" class="cost">
+                <h2>Total Cost</h2>
+                <p>Cost for warranty:</p>
+                <div id="warranty_price" class="warranty_price">No Choice yet</div><br/>
+                <p>Cost for mileage coverage:</p>
+                <div id="covprice" class="covprice">No choice yet</div><br/>
+                <p>Additional fees for vehicles mileage:</p>
+                <div id="milsurcharge" class="milsurcharge">No Choice Yet</div><br/>   
+                 <p>Total Cost:</p> 
+                 </div>
+                 
+                 
+                <div id="cart_total">0</div>
+             </div>
+            
+        </article>
+        
+        
+     	<div id="bottomSelect">
+            <div id="prev">
+                    <form action ="step4.html" method="post" enctype="multipart/form-data">
+                    <input type="submit" value="PREV" class="inputprev"/>
+                    </form>
+            </div>
+            
+            <div id="next">
+                    <form action ="checkout.html" method="post" enctype="multipart/form-data">
+                    <input type="submit" value="CHECKOUT" class="inputnext"/>
+                    </form>
+            </div>
+        </div>
+        
+    </main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

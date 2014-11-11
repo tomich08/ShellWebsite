@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Coverage</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+</head>
+<body class="steps clearfix">
+
+    <header id="stepsHead">
+                <div id="logoBoxTwo">
+                    <img src="img/logo2.png" alt="logo" id="mainLogo2"/>
+                </div>
+    </header>
+
+	<main class="clearfix">
+    	<div id="progressbar">
+        	<img src="img/progress4.png" alt="progress bar" class="progress">
+        </div>
+        
+    	<article class="selectionArea clearfix">
+    		<div class="selectionHeader clearfix">
+            	<img src="img/number4.png" class="numbers">
+    			<h1 class="numbers2">Coverage</h1>
+            </div>
+            
+            <div id="step1check" class="clearfix">
+                	<li id="length1"><a href="#"><img src="img/uncheckedbox.png" class="checkmark"></a></li>
+                    <li id="length1check"><a href="#"><img src="img/checkedbox.png" alt="checkbox" class="checkmark" /></a></li>
+                    
+                    <li id="length2"><a href="#"><img src="img/uncheckedbox.png" class="checkmark"></a></li>
+                    <li id="length2check"><a href="#"><img src="img/checkedbox.png" alt="checkbox" class="checkmark" /></a></li>
+                    
+                    <li id="length3"><a href="#"><img src="img/uncheckedbox.png" class="checkmark"></a></li>
+                    <li id="length3check"><a href="#"><img src="img/checkedbox.png" alt="checkbox" class="checkmark" /></a></li>
+                </div>
+                
+                <div id="vehiclecol" class="clearfix">
+                	<li><a href="#"><img src="img/cov1.png" alt="coverage" class="vehiclemil" id="cov1"/></a></li>
+                    <div id="cov1details"><p>This selection will cover your vehicle for up to 20K miles.</p></div>
+                    
+                    <li><a href="#"><img src="img/cov2.png" alt="coverage" class="vehiclemil" id="cov2"/></a></li>
+                    <div id="cov2details"><p>This selection will cover your vehicle for up to 40K miles.</p></div>
+                    
+                    <li><a href="#"><img src="img/cov3.png" alt="coverage" class="vehiclemil" id="cov3"/></a></li>
+                    <div id="cov3details"><p>This selection will cover your vehicle for up to 60K miles.</p></div>
+                </div>
+                
+                <div id="vehicledesc">
+                	<li>$10 per month</li>
+                    <li>$15 per month</li>
+                    <li>$20 per month</li>
+                </div>
+        </article>
+        
+        
+        <div id="bottomSelect">
+            <div id="prev">
+                    <form action ="step3.html" method="post" enctype="multipart/form-data">
+                    <input type="submit" value="PREV" class="inputprev"/>
+                    </form>
+            </div>
+            
+            <div id="next">
+                    <form action ="finish.html" method="post" enctype="multipart/form-data">
+                    <input type="submit" value="NEXT" class="inputnext"/>
+                    </form>
+            </div>
+        </div>
+    </main>
+
+<script src="js/script.js"></script>
+
+<script>
+document.getElementById("cov1").onclick=
+function(){ covOne()};
+
+document.getElementById("cov2").onclick=
+function(){ covTwo()};
+
+document.getElementById("cov3").onclick=
+function(){ covThree()};
+
+var covPlan = "none";
+function covOne(){
+	if(covPlan == "none"){
+	document.getElementById("cov1details").style.display="block";
+	covPlan = "block";
+	}else if(covPlan == "block"){
+		document.getElementById("cov1details").style.display="none";
+		covPlan="none";
+	}
+}
+
+
+function covTwo(){
+	if(covPlan == "none"){
+	document.getElementById("cov2details").style.display="block";
+	covPlan = "block";
+	}else if(covPlan == "block"){
+		document.getElementById("cov2details").style.display="none";
+		covPlan="none";
+	}
+}
+
+function covThree(){
+	if(covPlan == "none"){
+	document.getElementById("cov3details").style.display="block";
+	covPlan = "block";
+	}else if(covPlan == "block"){
+		document.getElementById("cov3details").style.display="none";
+		covPlan="none";
+	}
+}
+
+
+
+document.getElementById("length1").onclick = function(e){
+		e.preventDefault();
+		choseLengthOne();
+		
+		document.getElementById("length1check").style.display="block";
+		document.getElementById("length1").style.display="none";
+		document.getElementById("length2check").style.display="none";
+		document.getElementById("length2").style.display="block";
+		document.getElementById("length3check").style.display="none";
+		document.getElementById("length3").style.display="block";
+}
+
+document.getElementById("length2").onclick = function(e){
+		e.preventDefault();
+		choseLengthTwo();
+		
+		document.getElementById("length1check").style.display="none";
+		document.getElementById("length1").style.display="block";
+		document.getElementById("length2check").style.display="block";
+		document.getElementById("length2").style.display="none";
+		document.getElementById("length3check").style.display="none";
+		document.getElementById("length3").style.display="block";
+}
+
+document.getElementById("length3").onclick = function(e){
+		e.preventDefault();
+		choseLengthThree();
+		
+		document.getElementById("length1check").style.display="none";
+		document.getElementById("length1").style.display="block";
+		document.getElementById("length2check").style.display="none";
+		document.getElementById("length2").style.display="block";
+		document.getElementById("length3check").style.display="block";
+		document.getElementById("length3").style.display="none";
+}
+
+</script>
+
+</body>
+</html>

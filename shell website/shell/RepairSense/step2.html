@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vehicle Info</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="steps clearfix">
+
+    <header id="stepsHead">
+                <div id="logoBoxTwo">
+                    <img src="img/logo2.png" alt="logo" id="mainLogo2"/>
+                </div>
+    </header>
+
+	<main class="clearfix">
+    	<div id="progressbar">
+        	<img src="img/progress2.png" alt="progress bar" class="progress">
+        </div>
+    
+    	<article class="selectionArea clearfix">
+    		<div class="selectionHeader clearfix">
+            	<img src="img/number2.png" class="numbers">
+    			<h1 class="numbers2">Vehicle Info</h1>
+                <h3>How many miles does you vehicle have?</h3>
+            </div>
+            
+            
+           		<div id="step1check" class="clearfix">
+                	<li id="mile1"><a href="#"><img src="img/uncheckedbox.png" class="checkmark"></a></li>
+                    <li id="mile1check"><a href="#"><img src="img/checkedbox.png" alt="checkbox" class="checkmark" /></a></li>
+                    
+                    <li id="mile2"><a href="#"><img src="img/uncheckedbox.png" class="checkmark"></a></li>
+                    <li id="mile2check"><a href="#"><img src="img/checkedbox.png" alt="checkbox" class="checkmark" /></a></li>
+                    
+                    <li id="mile3"><a href="#"><img src="img/uncheckedbox.png" class="checkmark"></a></li>
+                    <li id="mile3check"><a href="#"><img src="img/checkedbox.png" alt="checkbox" class="checkmark" /></a></li>
+                </div>
+                
+                <div id="vehiclecol" class="clearfix">
+                	<li><a href="#"><img src="img/vehinfo1.png" alt="vehicle mileage" class="vehiclemil"/></a></li>
+                    <li><a href="#"><img src="img/vehinfo2.png" alt="vehicle mileage" class="vehiclemil"/></a></li>
+                    <li><a href="#"><img src="img/vehicinfo3.png" alt="vehicle mileage" class="vehiclemil"/></a></li>
+                </div>
+                
+                <div id="vehicledesc">
+                	<li><p>$0</p></li>
+                    <li><p>$5</p></li>
+                    <li><p>$10</p></li>
+                </div>
+            
+            
+            
+        </article>
+        
+        
+        <div id="bottomSelect">
+            <div id="prev">
+                    <form action ="step1.html" method="post" enctype="multipart/form-data">
+                    <input type="submit" value="PREV" class="inputprev"/>
+                    </form>
+            </div>
+            
+            <div id="next">
+                    <form action ="step3.html" method="post" enctype="multipart/form-data">
+                    <input type="submit" value="NEXT" class="inputnext"/>
+                    </form>
+            </div>
+        </div>
+    </main>
+
+<script src="js/script.js"></script>
+<script>
+
+document.getElementById("mile1").onclick = function(e){
+		e.preventDefault();
+		choseMileOne();
+		
+		document.getElementById("mile1check").style.display="block";
+		document.getElementById("mile1").style.display="none";
+		document.getElementById("mile2check").style.display="none";
+		document.getElementById("mile2").style.display="block";
+		document.getElementById("mile3check").style.display="none";
+		document.getElementById("mile3").style.display="block";
+}
+
+document.getElementById("mile2").onclick = function(e){
+		e.preventDefault();
+		choseMileTwo();
+		
+		document.getElementById("mile2check").style.display="block";
+		document.getElementById("mile2").style.display="none";
+		document.getElementById("mile1check").style.display="none";
+		document.getElementById("mile1").style.display="block";
+		document.getElementById("mile3check").style.display="none";
+		document.getElementById("mile3").style.display="block";
+}
+
+document.getElementById("mile3").onclick = function(e){
+		e.preventDefault();
+		choseMileThree();
+		
+		document.getElementById("mile3check").style.display="block";
+		document.getElementById("mile3").style.display="none";
+		document.getElementById("mile2check").style.display="none";
+		document.getElementById("mile2").style.display="block";
+		document.getElementById("mile1check").style.display="none";
+		document.getElementById("mile1").style.display="block";
+		
+}
+
+
+</script>
+
+</body>
+</html>
+

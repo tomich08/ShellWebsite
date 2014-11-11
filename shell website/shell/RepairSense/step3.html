@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Warranty Options</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+</head>
+<body class="steps clearfix">
+
+    <header id="stepsHead">
+                <div id="logoBoxTwo">
+                    <img src="img/logo2.png" alt="logo" id="mainLogo2"/>
+                </div>
+    </header>
+
+	<main class="clearfix">
+    	<div id="progressbar">
+        	<img src="img/progress3.png" alt="progress bar" class="progress">
+        </div>
+        
+    	<article class="selectionArea clearfix">
+    		<div class="selectionHeader clearfix">
+            	<img src="img/number3.png" class="numbers">
+    			<h1 class="numbers2">Warranty Options</h1>
+                <h3>Please select a plan!</h3>
+            </div>
+            
+            <div id="step1check" class="clearfix">
+                	<li id="opt1"><a href="#"><img src="img/uncheckedbox.png" class="checkmark"></a></li>
+                    <li id="opt1check"><a href="#"><img src="img/checkedbox.png" alt="checkbox" class="checkmark" /></a></li>
+                    
+                    <li id="opt2"><a href="#"><img src="img/uncheckedbox.png" class="checkmark"></a></li>
+                    <li id="opt2check"><a href="#"><img src="img/checkedbox.png" alt="checkbox" class="checkmark" /></a></li>
+                    
+                    <li id="opt3"><a href="#"><img src="img/uncheckedbox.png" class="checkmark"></a></li>
+                    <li id="opt3check"><a href="#"><img src="img/checkedbox.png" alt="checkbox" class="checkmark" /></a></li>
+                </div>
+                
+                <div id="vehiclecol" class="clearfix">
+                	<li><a href="#"><img src="img/plan1.png" alt="plans" class="vehiclemil" id="plan1"/></a></li>
+                    <div id="plan1details"><p>Our basic plan is great for routine maintence.  Included is fluid checks,<br/>transmission, brake lines,safety checks,cooling system, and electrical.</p></div>
+                    
+                    <li><a href="#"><img src="img/plan2.png" alt="plans" class="vehiclemil" id="plan2"/></a></li>
+                    <div id="plan2details"><p>Premium plan provides the comfort of bumper to bumper protection for your vehicle.  Includes everything the basic plan offers plus you will get your vehicles entire engine covered.</p></div>
+                    
+                    <li><a href="#"><img src="img/plan3.png" alt="plans" class="vehiclemil" id="plan3"/></a></li>
+                    <div id="plan3details"><p>Tired of worrying about state inspections, tires, and brakes?  The Gold plan not only gives you the comfort of bumper to bumper coverage, you will also have normal wear and tear items covered. </p></div>
+                </div>
+                
+                <div id="vehicledesc">
+                	<li><p>25.99 per month</p></li>
+                    <li><p>35.99 per month</p></li>
+                    <li><p>45.99 per month</p></li>
+                </div>
+        </article>
+        
+        
+        <div id="bottomSelect">
+            <div id="prev">
+                    <form action ="step2.html" method="post" enctype="multipart/form-data">
+                    <input type="submit" value="PREV" class="inputprev"/>
+                    </form>
+            </div>
+            
+            <div id="next">
+                    <form action ="step4.html" method="post" enctype="multipart/form-data">
+                    <input type="submit" value="NEXT" class="inputnext"/>
+                    </form>
+            </div>
+        </div>
+    </main>
+
+<script src="js/script.js"></script>
+<script>
+document.getElementById("plan1").onclick=
+function(){ planOne()};
+
+document.getElementById("plan2").onclick=
+function(){ planTwo()};
+
+document.getElementById("plan3").onclick=
+function(){ planThree()};
+
+var dispPlan = "none";
+function planOne(){
+	if(dispPlan == "none"){
+	document.getElementById("plan1details").style.display="block";
+	dispPlan = "block";
+	}else if(dispPlan == "block"){
+		document.getElementById("plan1details").style.display="none";
+		dispPlan="none";
+	}
+}
+
+
+function planTwo(){
+	if(dispPlan == "none"){
+	document.getElementById("plan2details").style.display="block";
+	dispPlan = "block";
+	}else if(dispPlan == "block"){
+		document.getElementById("plan2details").style.display="none";
+		dispPlan="none";
+	}
+}
+
+function planThree(){
+	if(dispPlan == "none"){
+	document.getElementById("plan3details").style.display="block";
+	dispPlan = "block";
+	}else if(dispPlan == "block"){
+		document.getElementById("plan3details").style.display="none";
+		dispPlan="none";
+	}
+}
+
+document.getElementById("opt1").onclick = function(e){
+		e.preventDefault();
+		choseOptOne();
+		
+		document.getElementById("opt1check").style.display="block";
+		document.getElementById("opt1").style.display="none";
+		document.getElementById("opt2check").style.display="none";
+		document.getElementById("opt2").style.display="block";
+		document.getElementById("opt3check").style.display="none";
+		document.getElementById("opt3").style.display="block";
+}
+
+document.getElementById("opt2").onclick = function(e){
+		e.preventDefault();
+		choseOptTwo();
+		
+		document.getElementById("opt2check").style.display="block";
+		document.getElementById("opt2").style.display="none";
+		document.getElementById("opt1check").style.display="none";
+		document.getElementById("opt1").style.display="block";
+		document.getElementById("opt3check").style.display="none";
+		document.getElementById("opt3").style.display="block";
+		
+}
+
+document.getElementById("opt3").onclick = function(e){
+		e.preventDefault();
+		choseOptThree();
+		
+		document.getElementById("opt3check").style.display="block";
+		document.getElementById("opt3").style.display="none";
+		document.getElementById("opt1check").style.display="none";
+		document.getElementById("opt1").style.display="block";
+		document.getElementById("opt2check").style.display="none";
+		document.getElementById("opt2").style.display="block";
+}
+
+</script>
+</body>
+</html>

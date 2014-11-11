@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Your Vehicle</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+</head>
+<body class="steps clearfix">
+
+    <header id="stepsHead">
+                <div id="logoBoxTwo">
+                    <img src="img/logo2.png" alt="logo" id="mainLogo2"/>
+                </div>
+    </header>
+
+	<main class="clearfix">
+    	
+    	<div id="progressbar">
+        	<img src="img/progress1.png" alt="progress bar" class="progress">
+        </div>
+        
+    	<article class="selectionArea clearfix">
+    		<div class="selectionHeader clearfix">
+            	<img src="img/number1.png" class="numbers">
+    			<h1 class="numbers2">Pick Your Vehicle</h1>
+                <h3>Please select the vehicle you own</h3>
+             </div>   
+                <div id="step1check" class="clearfix">
+                	<li id="truck"><a href="#"><img src="img/uncheckedbox.png" class="checkmark" ></a></li>
+                    <li id="truckcheck"><a href="#"><img src="img/checkedbox.png" alt="checkbox" class="checkmark" /></a></li>
+                    
+                    <li id="suv"><a href="#"><img src="img/uncheckedbox.png" class="checkmark" ></a></li>
+                    <li id="suvcheck"><a href="#"><img src="img/checkedbox.png" alt="checkbox" class="checkmark" /></a></li>
+                    
+                    <li id="car"><a href="#"><img src="img/uncheckedbox.png" class="checkmark" ></a></li>
+                    <li id="carcheck"><a href="#"><img src="img/checkedbox.png" alt="checkbox" class="checkmark" /></a></li>
+                    
+                    <li id="compact"><a href="#"><img src="img/uncheckedbox.png" class="checkmark" ></a></li>
+                    <li id="compactcheck"><a href="#"><img src="img/checkedbox.png" alt="checkbox" class="checkmark" /></a></li>
+                </div>
+                
+                <div id="vehiclecol" class="clearfix">
+                	<li><img src="img/pickup.png" class="carchoice"></li>
+                    <li><img src="img/suv.png" class="carchoice"></li>
+                    <li><img src="img/car.png" class="carchoice"></li>
+                    <li><img src="img/compactcar.png" class="carchoice"></li>
+                </div>
+                
+                <div id="vehicledesc">
+                	<li><p>Pickup Truck</p></li>
+                    <li><p>SUV</p></li>
+                    <li><p>Full Size Car</p></li>
+                    <li><p>Compact Car</p></li>
+                </div> 
+                
+            
+        </article>
+        
+        
+        <div id="bottomSelect">
+            <div id="prev">
+                    <form action ="index.html" method="post" enctype="multipart/form-data">
+                    <input type="submit" value="PREV" class="inputprev"/>
+                    </form>
+            </div>
+            
+            <div id="next">
+                    <form action ="step2.html" method="post" enctype="multipart/form-data">
+                    <input type="submit" value="NEXT" class="inputnext"/>
+                    </form>
+            </div>
+        </div>
+    </main>
+
+<script src="js/script.js"></script>
+<script>
+/*if(typeof(Storage)!== "undefined"){
+	alert("yes");
+}else{
+	alert("no");
+}*/
+
+
+	/* Event handlers for buttons found only on this page: */
+	
+	
+	document.getElementById("truck").onclick = function(e){
+		e.preventDefault();
+		choseTruck();
+			
+		document.getElementById("truckcheck").style.display="block";
+		document.getElementById("truck").style.display="none";
+		document.getElementById("suvcheck").style.display="none";
+		document.getElementById("suv").style.display="block";
+		document.getElementById("carcheck").style.display="none";
+		document.getElementById("car").style.display="block";
+		document.getElementById("compactcheck").style.display="none";
+		document.getElementById("compact").style.display="block";
+	}
+	
+	document.getElementById("suv").onclick = function(e){
+		e.preventDefault();
+		choseSuv();
+		
+		document.getElementById("suvcheck").style.display="block";
+		document.getElementById("suv").style.display="none";
+		document.getElementById("truckcheck").style.display="none";
+		document.getElementById("truck").style.display="block";
+		document.getElementById("carcheck").style.display="none";
+		document.getElementById("car").style.display="block";
+		document.getElementById("compactcheck").style.display="none";
+		document.getElementById("compact").style.display="block";
+	}
+	
+	document.getElementById("car").onclick = function(e){
+		e.preventDefault();
+		choseCar();
+		document.getElementById("carcheck").style.display="block";
+		document.getElementById("car").style.display="none";
+		document.getElementById("truckcheck").style.display="none";
+		document.getElementById("truck").style.display="block";
+		document.getElementById("suvcheck").style.display="none";
+		document.getElementById("suv").style.display="block";
+		document.getElementById("compactcheck").style.display="none";
+		document.getElementById("compact").style.display="block";
+	}
+	
+	document.getElementById("compact").onclick = function(e){
+		e.preventDefault();
+		choseCompact();
+		document.getElementById("compactcheck").style.display="block";
+		document.getElementById("compact").style.display="none";
+		document.getElementById("truckcheck").style.display="none";
+		document.getElementById("truck").style.display="block";
+		document.getElementById("suvcheck").style.display="none";
+		document.getElementById("suv").style.display="block";
+		document.getElementById("carcheck").style.display="none";
+		document.getElementById("car").style.display="block";
+	}
+</script>
+</body>
+</html>
